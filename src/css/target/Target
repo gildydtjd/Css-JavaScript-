@@ -1,0 +1,7 @@
+target 속성
+
+_self = 연결 문서를 클릭한 창에서 엶
+_blank = 연결문서를 새 창에서 엶
+_parent 부모창에서 엶
+_top 가장 상위 창에서 엶
+frame name = 지정된 프레임 안에 엶
