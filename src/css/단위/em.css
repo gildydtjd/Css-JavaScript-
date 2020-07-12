@@ -1,0 +1,11 @@
+body { font-size: 14px; 
+} 
+
+div { font-size: 1.2em;  
+}
+/* calculated at 14px * 1.2, or 16.8px
+여기, div에 font-size를 1.2em으로 지정했습니다. 
+이 예제에서는 14px을 기준으로 1.2배의 폰트 사이즈로 표현이 됩니다. 
+결과적으로 16.8px의 크기가 됩니다.  */
+
+

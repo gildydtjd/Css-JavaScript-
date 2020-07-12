@@ -1,0 +1,10 @@
+/* 1. normal 값 사용 */ 
+p { line-height: normal; } 
+/* 2. inherit(상속)값 사용 */ 
+p { line-height: inherit; } 
+/* 3. 퍼센트값 사용 */ 
+p { line-height: 120%; } 
+/* 4. 길이 단위 값(px, em 등) 사용 */ 
+p { line-height: 20px; } 
+/* 5. 숫자 값(단위 표기가 없는) 사용 */
+ p { line-height: 1.2; }
