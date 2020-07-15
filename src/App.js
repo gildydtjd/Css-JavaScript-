@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import ResponsiveWeb from './css/ResponsiveWeb';
+import ScrollMagic from './javascript/스크롤매직/ScrollMagic';
 
 function App() {
   return (
     <div className="App">
-      <ResponsiveWeb />
+      <ScrollMagic />
     </div>
   );
 }

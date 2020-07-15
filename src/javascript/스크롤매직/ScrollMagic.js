@@ -6,42 +6,37 @@
 
 import React, { Component } from 'react'
 import "./scrollmagic.scss"
+import { TweenMax } from 'gsap'
 export default class ScrollMagic extends Component {
-  function () {
-
+  function(){
+    
     var controller = new ScrollMagic.Controller();
-  
-    var tweenYoyo = TweenMax.fromTo("#animate1", 0.6, {
-      backgroundColor: "#333333",
-      scale: 1,
-    }, {
-      scale: 2.5,
-      backgroundColor: "#dc143c",
-      x: 100,
-      rotation: 360,
-      repeat: -1,
-      yoyo: true
-    })
-  
+    
+    var tween1 = TweenMax.to('#animate1', 0.5, {
+        backgroundColor: "#333333",
+        scale: 2.5,
+        rotation: 360,
+        x: 130
+    });
+    
     var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger1",
-        duration: 150
-      })
-      .setTween(tweenYoyo)
-      .addTo(controller)
-      .addIndicators({
+        duration: "100%"
+    })
+    .setTween(tween1)
+    .addTo(controller)
+    .addIndicators({
         name: "1"
-      });
-  
+    }) 
   }
-  
+
   render() {
     return (
       <div>
         <div class="wrap">
     <div class="top">
         <h1>ScrollMagic Demo</h1>
-        <p>스크롤매직 라이브러리 데모입니다.<br/><a href="http://scrollmagic.io/examples/" target="_blank">여기</a>에서 더 많은 예시를 확인할 수 있습니다.</p>
+        {/* <p>스크롤매직 라이브러리 데모입니다.<br/><a href="http://scrollmagic.io/examples/" target="_blank">여기</a>에서 더 많은 예시를 확인할 수 있습니다.</p> */}
     </div>
     <div class="main">
         <h2>What a wonderful!</h2>
@@ -53,6 +48,11 @@ export default class ScrollMagic extends Component {
         <div class="trigger" id="trigger1">Trigger!</div>
         <div class="spacer"></div>
         <div id="animate1" class="icon">Hello</div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
     </div>
     <div class="footer"><a href="https://nykim.work">nykim.work</a></div>
 </div>
@@ -60,3 +60,4 @@ export default class ScrollMagic extends Component {
     )
   }
 }
+
