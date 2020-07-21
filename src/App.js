@@ -1,11 +1,10 @@
 import React from 'react';
 import './App.css';
-import ScrollMagic from './javascript/스크롤매직/ScrollMagic';
-
+import List from './javascript/magic/List';
 function App() {
   return (
     <div className="App">
-      <ScrollMagic />
+      <List />
     </div>
   );
 }
