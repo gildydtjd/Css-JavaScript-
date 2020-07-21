@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import List from './javascript/magic/List';
+import ClassToggle from './javascript/magic/ClassToggle';
 function App() {
   return (
     <div className="App">
-      <List />
+      <ClassToggle />
     </div>
   );
 }
