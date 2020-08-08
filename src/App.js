@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import ClassToggle from './javascript/magic/ClassToggle';
+import Loading from './css/로딩바/Loading';
 function App() {
   return (
     <div className="App">
-      <ClassToggle />
+      <Loading />
     </div>
   );
 }
