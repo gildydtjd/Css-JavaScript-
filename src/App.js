@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Loading from './css/로딩바/Loading';
+import Async_await from './javascript/async,await/Async_await';
 function App() {
   return (
     <div className="App">
-      <Loading />
+      <Async_await />
     </div>
   );
 }
